@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>schemes</title>
+    <style>
+      body{
+         
+         background-image: url("bgimg.jpg");
+         background-repeat: repeat;
+         
+     }
+        .collapsible {
+            border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.collapsible {
+  background-color: white; 
+  color: black; 
+  border: 2px solid rgb(38, 0, 255);
+}
+
+.collapsible:hover {
+  background-color:yellow;
+  color: rgb(3, 18, 72);
+}
+.active, .collapsible:hover {
+  background-color: #f9cab2;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1eb9d;
+  color:blue;
+}
+.button {
+    border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button3 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid red;
+}
+
+.button3:hover {
+  background-color:yellow;
+  color: rgb(3, 18, 72);
+}
+    </style>
+</head>
+<body>
+    <div class="bank">
+        <button type="button" class="collapsible">All Maharastra Government Schemes </button>
+        <div class="content">
+            <h1><b><a href="s.html">Tribual Devlopment Deparment</b></h1><br>
+            <h1><b> Directorate of Higher Education </b></h1><br>
+            <h1><b> Directorate of Technical Education </b></h1><br>
+            <h1><b> VJNT,OBC and SBC Welfare Department  </b></h1><br>
+            <h1><b> Anant Scholarship.</b></h1><br>
+            <h1><b>  NSF Scholarship.</b></h1><br>
+            <h1><b>CCRT Scholarship.</b></h1><br>
+            <h1><b> 24th NEST Scholarship 2022.</b></h1><br>
+            <h1><b> Next Genius Scholarship.</b></h1><br>
+            <h1><b> Joseph Mundassery Scholarship.</b></h1><br>
+            </div>
+            </div>
+
+            <script>
+                var coll = document.getElementsByClassName("collapsible");
+                var i;
+
+                for (i = 0; i < coll.length; i++) {
+                  coll[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.display === "block") {
+                      content.style.display = "none";
+                    } else {
+                      content.style.display = "block";
+                    }
+                  });
+                }
+                </script> 
+
+</body>
+</html>
